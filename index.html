@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body id="body">
+    <h1>Naija Whot</h1>
+    <p id="text"></p>
+
+
+    <form class="" action="index.js" method="post">
+      <label for="">Number of Players</label>
+      <select id="numberOfPlayers" name="numberOfPlayers">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button id="startButton" type="button" name="button">Start Game</button>
+      <button id="getCardFromDeck"type="button" name="button">Get From Deck</button>
+    </form>
+
+    <div id="dropPoint" class="dropPoint" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+
+    <div id="neededCards" class="neededCards">
+      <select id="neededCardsSelect" class="neededCardsSelect" name="">
+        <option value="Circle">Circle</option>
+        <option value="Cross">Cross</option>
+        <option value="Square">Square</option>
+        <option value="Star">Star</option>
+        <option value="Triangle">Triangle</option>
+      </select>
+      <button id="selectedCardForWhotButton" type="button" name="button" onclick="changeWhotNeededCard()">Choose</button>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
